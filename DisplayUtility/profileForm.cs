@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DisplayUtility
 {
-    public partial class mainForm : Form
+    public partial class profileForm : Form
     {
-        public mainForm()
+        public profileForm()
         {
             InitializeComponent();
         }
