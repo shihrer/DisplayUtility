@@ -16,7 +16,7 @@ namespace DisplayUtility
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new profileForm());
+            Application.Run(new mainForm());
         }
     }
 }
