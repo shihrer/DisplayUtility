@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profileForm));
             this.displaysGroupBox = new System.Windows.Forms.GroupBox();
             this.primaryDisplayGroupBox = new System.Windows.Forms.GroupBox();
             this.primaryDisplayComboBox = new System.Windows.Forms.ComboBox();
@@ -90,6 +91,7 @@
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.primaryDisplayGroupBox);
             this.Controls.Add(this.displaysGroupBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "profileForm";
             this.Text = "Configure Profile";
             this.primaryDisplayGroupBox.ResumeLayout(false);

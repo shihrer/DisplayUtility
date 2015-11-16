@@ -90,6 +90,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.activeProfileGroupBox);
             this.Controls.Add(this.selectProfileGroupBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.Text = "Display Utility";
             this.Resize += new System.EventHandler(this.mainForm_Resize);
