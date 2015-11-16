@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.selectProfileGroupBox = new System.Windows.Forms.GroupBox();
-            this.activeProfileGroupBox = new System.Windows.Forms.GroupBox();
             this.profilesComboBox = new System.Windows.Forms.ComboBox();
+            this.activeProfileGroupBox = new System.Windows.Forms.GroupBox();
             this.activatedProfileLabel = new System.Windows.Forms.Label();
+            this.displayUtilityNotifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.selectProfileGroupBox.SuspendLayout();
             this.activeProfileGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +49,14 @@
             this.selectProfileGroupBox.TabStop = false;
             this.selectProfileGroupBox.Text = "Select Profile";
             // 
+            // profilesComboBox
+            // 
+            this.profilesComboBox.FormattingEnabled = true;
+            this.profilesComboBox.Location = new System.Drawing.Point(7, 20);
+            this.profilesComboBox.Name = "profilesComboBox";
+            this.profilesComboBox.Size = new System.Drawing.Size(247, 21);
+            this.profilesComboBox.TabIndex = 0;
+            // 
             // activeProfileGroupBox
             // 
             this.activeProfileGroupBox.Controls.Add(this.activatedProfileLabel);
@@ -56,14 +67,6 @@
             this.activeProfileGroupBox.TabStop = false;
             this.activeProfileGroupBox.Text = "Active Profile";
             // 
-            // profilesComboBox
-            // 
-            this.profilesComboBox.FormattingEnabled = true;
-            this.profilesComboBox.Location = new System.Drawing.Point(7, 20);
-            this.profilesComboBox.Name = "profilesComboBox";
-            this.profilesComboBox.Size = new System.Drawing.Size(247, 21);
-            this.profilesComboBox.TabIndex = 0;
-            // 
             // activatedProfileLabel
             // 
             this.activatedProfileLabel.AutoSize = true;
@@ -72,6 +75,13 @@
             this.activatedProfileLabel.Size = new System.Drawing.Size(84, 13);
             this.activatedProfileLabel.TabIndex = 0;
             this.activatedProfileLabel.Text = "Activated Profile";
+            // 
+            // displayUtilityNotifyIcon
+            // 
+            this.displayUtilityNotifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("displayUtilityNotifyIcon.Icon")));
+            this.displayUtilityNotifyIcon.Text = "Display Utility";
+            this.displayUtilityNotifyIcon.Visible = true;
+            this.displayUtilityNotifyIcon.DoubleClick += new System.EventHandler(this.displayUtilityNotifyIcon_DoubleClick);
             // 
             // mainForm
             // 
@@ -82,6 +92,7 @@
             this.Controls.Add(this.selectProfileGroupBox);
             this.Name = "mainForm";
             this.Text = "Display Utility";
+            this.Resize += new System.EventHandler(this.mainForm_Resize);
             this.selectProfileGroupBox.ResumeLayout(false);
             this.activeProfileGroupBox.ResumeLayout(false);
             this.activeProfileGroupBox.PerformLayout();
@@ -95,5 +106,6 @@
         private System.Windows.Forms.GroupBox activeProfileGroupBox;
         private System.Windows.Forms.ComboBox profilesComboBox;
         private System.Windows.Forms.Label activatedProfileLabel;
+        private System.Windows.Forms.NotifyIcon displayUtilityNotifyIcon;
     }
 }

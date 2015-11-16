@@ -16,5 +16,17 @@ namespace DisplayUtility
         {
             InitializeComponent();
         }
+
+        private void mainForm_Resize(object sender, EventArgs e)
+        {
+            if (FormWindowState.Minimized == WindowState)
+                Hide();
+        }
+
+        private void displayUtilityNotifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+        }
     }
 }
