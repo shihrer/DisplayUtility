@@ -91,7 +91,7 @@
             this.Controls.Add(this.primaryDisplayGroupBox);
             this.Controls.Add(this.displaysGroupBox);
             this.Name = "profileForm";
-            this.Text = "Display Utility";
+            this.Text = "Configure Profile";
             this.primaryDisplayGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
