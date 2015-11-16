@@ -90,8 +90,11 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.activeProfileGroupBox);
             this.Controls.Add(this.selectProfileGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "mainForm";
+            this.ShowInTaskbar = false;
             this.Text = "Display Utility";
             this.Resize += new System.EventHandler(this.mainForm_Resize);
             this.selectProfileGroupBox.ResumeLayout(false);

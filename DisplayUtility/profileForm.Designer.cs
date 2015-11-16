@@ -91,7 +91,9 @@
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.primaryDisplayGroupBox);
             this.Controls.Add(this.displaysGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "profileForm";
             this.Text = "Configure Profile";
             this.primaryDisplayGroupBox.ResumeLayout(false);
