@@ -28,5 +28,11 @@ namespace DisplayUtility
             Show();
             WindowState = FormWindowState.Normal;
         }
+
+        private void newProfileButton_Click(object sender, EventArgs e)
+        {
+            profileForm newProfile = new profileForm();
+            newProfile.ShowDialog();
+        }
     }
 }
